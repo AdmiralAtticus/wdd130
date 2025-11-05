@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        th, tr, td {
+            border: 1px solid black;
+            padding: .5em 1em;
+        }
+
+        label, input {
+            display: block;
+            width: 200px;
+        }
+
+        input {
+            margin-bottom: 1em;
+            padding: .5em 1em;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Column 1</td>
+            <td>Row 3, Column 2</td>
+            <td>Row 3, Column 3</td>
+        </tr>
+    </table>
+
+    <form action="">
+        <label for="fname">First Name:</label> 
+        <input type="text" name="fname" id="fname" title="First name" placeholder="Enter your first name">
+        <label for="lname">Last Name:</label> 
+        <input type="text" name="lname" id="lname" title="Last name" placeholder="Enter your last name">
+        <input type="submit" value="Sign Up">
+
+    </form>
+</body>
+</html>

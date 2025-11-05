@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+:root {
+  --gold: #FFD700;
+  --cream: #FFF9E6;
+  --black: #000000;
+  --gray: #333333;
+}
+
+body {
+  font-family: 'Electrolize', sans-serif;
+  background-color: var(--cream);
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 0 20px;
+  transition: background 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--black);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h1 {
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  border-left: 4px solid var(--gold);
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+strong {
+  color: var(--gold);
+}
+
+/* Color samples */
+.color-sample {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-bottom: 8px;
+  border: 2px solid var(--black);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.color-sample:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Section spacing */
+div {
+  margin-bottom: 25px;
+}
+
+/* Subtle card look for sections */
+section, div {
+  background-color: #ffffffb3;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Accent hover on headers */
+h2:hover {
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+/* Optional: Slight gold fade on body hover */
+body:hover {
+  background-color: #fffbe9;
+}

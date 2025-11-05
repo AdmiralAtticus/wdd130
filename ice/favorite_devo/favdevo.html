@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="header-image">
+      <h1>My Favorite<br>Devotionals</h1>
+    </div>
+  </header>
+
+  
+  <div class="container">
+    <div class="form-container">
+      <div class="content-box">
+        <div style="overflow-x: auto;">
+        
+        <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>          
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          
+        </table>
+        </div>
+        
+        <form action="#" method="post">
+          <label for="speaker">Speaker</label>
+          <input type="text" name="speaker" id="speaker" placeholder="Speaker Name" required>
+
+          <label for="title">Talk Title</label>
+          <input type="text" name="title" id="title" placeholder="Title of talk" required>
+
+          <label for="location">Location</label>
+          <input type="text" name="location" id="location" placeholder="Location of address" required>
+
+          <label for="year">Year</label>
+          <input type="number" name="year" id="year" min="1950" max="2025" placeholder="YYYY" required>
+
+          <button type="submit">Save Talk</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+/* ROOT VARIABLES */
+:root {
+  --gold: #FFD700;
+  --cream: #FFF9E6;
+  --black: #000000;
+  --gray: #333333;
+}
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY GRID SETUP */
+body {
+  font-family: 'Electrolize', sans-serif;
+  background-color: var(--cream);
+  color: var(--gray);
+  display: grid;
+  grid-template-columns: 1fr min(900px, 90%) 1fr;
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* MAIN GRID */
+main {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  gap: 30px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  color: var(--black);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h1 {
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  grid-column: 1 / -1;
+}
+
+h2 {
+  border-left: 4px solid var(--gold);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--gray);
+}
+
+/* SECTION CARDS */
+section {
+  background: #ffffffb3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* TEXT ELEMENTS */
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* COLOR PALETTE */
+.palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.color-sample {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 10px;
+  border: 2px solid var(--black);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.color-sample:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray);
+  opacity: 0.8;
+  margin-top: 40px;
+}

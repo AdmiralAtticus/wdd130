@@ -1,0 +1,115 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-attachment: fixed;
+}
+
+/* Header */
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+}
+
+/* Container centers form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px); /* subtract header height */
+  padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 380px;
+}
+
+/* Content Box */
+.content-box {
+  background-color: white;
+  width: 100%;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+/* Form Inputs */
+label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #0078ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 120, 255, 0.3);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  
+  
+  
+}
+
+button:hover {
+  background-color: #005fd1;
+}
